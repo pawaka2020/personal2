@@ -17,7 +17,7 @@ void	ft_putnbr_base(unsigned long nbr, char *base, int *res)
 {
 	unsigned int	baselen;
 
-	baselen = ft_strlen(base);
+	baselen = ft_strlen2(base);
 	if (nbr >= baselen)
 	{
 		ft_putnbr_base(nbr / baselen, base, res);

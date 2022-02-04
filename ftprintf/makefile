@@ -1,18 +1,17 @@
 # How to use:
 # Simply type 'make'
 # Then move the created libftprintf.a
-
 NAME = ftprintf.a
-all: $(NAME)
-$(NAME):
-	gcc -Wall -Wextra -Werror -c src/*.c
-	mv *.o obj/
-	ar rcs $(NAME) obj/*.o
+
+all:
+	gcc -Wall -Wextra -Werror -c *.c
+	ar rcs $(NAME) *.o
 clean:
-	rm -f obj/*.o
+	rm -f *.o
 fclean: clean
 	rm -f $(NAME)
 re: fclean all
+
 # For testing. Remember to uncomment main in ft_printf.c
 t: re
 	make clean

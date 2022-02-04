@@ -15,7 +15,7 @@ void	ft_printint(long i, int *strlen);
 void	ft_printstr(char *str, int *strlen);
 void	ft_printptr(unsigned long ptr, int *strlen);
 void	ft_printunsint(long i, int *strlen);
-int		ft_strlen(char *str);
+int		ft_strlen2(char *str);
 void	ft_putnbr_base(unsigned long nbr, char *base, int *res);
 void	ft_printhexa(unsigned int i, int *strlen);
 void	ft_printbighexa(unsigned int i, int *strlen);
