@@ -13,7 +13,7 @@ int		ft_putchar(char c);
 void	ft_printchar(int i, int *strlen);
 void	ft_printint(long i, int *strlen);
 void	ft_printstr(char *str, int *strlen);
-void	ft_printptr(void *ptr, int *strlen);
+void	ft_printptr(unsigned long ptr, int *strlen);
 void	ft_printunsint(long i, int *strlen);
 int		ft_strlen(char *str);
 void	ft_putnbr_base(unsigned long nbr, char *base, int *res);

@@ -14,7 +14,7 @@ int	ft_printf(const char *str, ...)
 			ft_printchar(*str, &strlen);
 		else
 		{
-			c = *(str +1);
+			c = *(str + 1);
 			if (ft_partof(c, "csp%diuxX"))
 				ft_printspec(c, arg, &strlen);
 			str++;
@@ -24,3 +24,14 @@ int	ft_printf(const char *str, ...)
 	va_end(arg);
 	return (strlen);
 }
+// //uncomment this and then test by typing 'make t'
+// #include <stdio.h>
+
+// int	main(void)
+// {
+// 	ft_printf("Hello World!\n");
+// 	printf("Hello World!\n");
+// 	return (0);
+// }
+
+

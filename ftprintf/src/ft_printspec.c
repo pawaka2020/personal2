@@ -1,4 +1,4 @@
-#include "ft_printf.h"
+ #include "ft_printf.h"
 
 void	ft_printspec(char c, va_list arg, int *strlen)
 {
@@ -7,7 +7,7 @@ void	ft_printspec(char c, va_list arg, int *strlen)
 	else if (c == 's')
 		ft_printstr(va_arg(arg, char *), strlen);
 	else if (c == 'p')
-		ft_printptr(va_arg(arg, void *), strlen);
+		ft_printptr(va_arg(arg, unsigned long), strlen);
 	else if (c == '%')
 		ft_printchar('%', strlen);
 	else if (c == 'd' || c == 'i')
