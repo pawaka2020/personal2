@@ -29,8 +29,8 @@ int	ft_printf(const char *str, ...)
 
 // int	main(void)
 // {
-// 	ft_printf("Hello World!\n");
-// 	printf("Hello World!\n");
+// 	ft_printf("ft_printf: Hello World!\n");
+// 	printf("printf: Hello World!\n");
 // 	return (0);
 // }
 

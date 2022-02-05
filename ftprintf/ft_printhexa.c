@@ -1,5 +1,4 @@
 #include "ft_printf.h"
-
 /*
 i is long given by %x, but converted to unsigned int
 strlen is the int result of ft_printf

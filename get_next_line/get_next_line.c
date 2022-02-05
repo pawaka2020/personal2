@@ -25,12 +25,12 @@ ft_postnl adjusts the string to "456\0" to be used next time
 get_next_line is called again
 */
 #include "get_next_line.h"
-
+#include <stdio.h>
 char	*ft_getrawline(int fd, char *str, int size)
 {
 	char	*buff;
 	int		readres;
-
+	
 	buff = malloc(size + 1);
 	if (!buff)
 		return (0);
@@ -43,13 +43,12 @@ char	*ft_getrawline(int fd, char *str, int size)
 			free(buff);
 			return (0);
 		}
-		buff[readres] = '\0';
+		buff[readres] = 0;
 		str = ft_append(str, buff);
 	}
 	free (buff);
 	return (str);
 }
-
 //In case of empty feed, the previous function
 //returns a string of 1 size, but element \0
 char	*ft_prenl(char *rawline)
@@ -109,10 +108,13 @@ char	*get_next_line(int fd)
 	static char	*rawline;
 	int			size;
 
-	size = BUFFER_SIZE;
+	size = 100000000;
 	if (fd < 0 || size <= 0)
 		return (0);
+		//
+	//rawline = 0;
 	rawline = ft_getrawline(fd, rawline, size);
+	
 	if (!rawline)
 		return (0);
 	line = ft_prenl(rawline);
@@ -120,11 +122,14 @@ char	*get_next_line(int fd)
 	return (line);
 }
 
-// int	main()
-// {
-// 	int fd1 = open("text", O_RDONLY);
-// 	int fd2 = open("text2", O_RDONLY);
-// 	printf("Hello\n");
-// 	// char *str = "123\n456";
-// 	// printf("result = %s\n", before_nl(str));
-// }
+#include <stdio.h>
+int	main()
+{
+	int fd = open("text", O_RDONLY);
+	char *line;
+	line = get_next_line(fd);
+	printf("%s",line);
+	line = get_next_line(fd);
+	printf("%s",line);
+
+}

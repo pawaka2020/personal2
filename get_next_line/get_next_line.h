@@ -16,9 +16,10 @@
 # include <unistd.h>
 # include <fcntl.h>
 # include <stdlib.h>
-
+# include "../libft/libft.h"
+//function prototypes
 int		ft_nlpresent(char *str);
-int		ft_strlen(char *s);
+//int		ft_strlen(char *s);
 char	*ft_append(char *src, char *dst);
 char	*ft_getrawline(int fd, char *left_str, int size);
 char	*ft_prenl(char *rawline);

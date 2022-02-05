@@ -1,5 +1,4 @@
 #include "ft_printf.h"
-
 /*
 PARAMETERS:
 1.'nbr' is the original number 
@@ -17,7 +16,7 @@ void	ft_putnbr_base(unsigned long nbr, char *base, int *res)
 {
 	unsigned int	baselen;
 
-	baselen = ft_strlen2(base);
+	baselen = ft_strlen(base);
 	if (nbr >= baselen)
 	{
 		ft_putnbr_base(nbr / baselen, base, res);

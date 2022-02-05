@@ -1,5 +1,5 @@
 #include "ft_printf.h"
-#include <stdio.h>
+
 static void	ft_putnbr(long n)
 {
 	if (n >= 10)
@@ -9,8 +9,6 @@ static void	ft_putnbr(long n)
 	}
 	else
 		ft_putchar(n + '0');
-		//write(1, &n, 1);
-		//ft_putchar(n);
 }
 
 static long	ft_nbrlen(long n)

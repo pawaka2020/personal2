@@ -1,7 +1,7 @@
 # How to use:
 # Simply type 'make'
 # Then move the created libftprintf.a
-NAME = ftprintf.a
+NAME = gnl.a
 LIBFT = ../libft/libft.a
 all:
 	gcc -Wall -Wextra -Werror -c *.c
@@ -15,7 +15,7 @@ re: fclean all
 # For testing. Remember to uncomment main in ft_printf.c
 t: re
 	@make clean
-	@gcc ft_printf.c $(NAME) $(LIBFT)
+	@gcc get_next_line.c $(NAME) $(LIBFT)
 	./a.out
 	@rm a.out
 .PHONY: all clean fclean re t
