@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   get_next_line.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dgaw <marvin@42.fr>                        +#+  +:+       +#+        */
+/*   By: riramli <riramli@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/10/19 19:57:39 by dgaw              #+#    #+#             */
-/*   Updated: 2021/10/26 23:07:07 by dgaw             ###   ########.fr       */
+/*   Created: 2022/01/01 00:00:00 by riramli           #+#    #+#             */
+/*   Updated: 2022/10/01 00:00:00 by riramli          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -110,3 +110,30 @@ static int	gnl_find_end(char *cache)
 	}
 	return (0);
 }
+/*
+//remember to uncomment before testing with 'make t'
+#include <stdio.h>
+int	main(void)
+{
+	int fd; 
+	int read;
+	char 	*line;
+	char	*str;
+
+	fd = open("text", O_RDONLY);
+	read = 0;
+	line = 0;
+	str = 0;
+	while (read == 0)
+	{
+		line = get_next_line(fd);
+		if (!line)
+			read = 1;
+		else
+			str = ft_strjoin(str, line);
+	}
+	printf("%s\n", str);
+	free(line);
+	free(str);
+}
+*/

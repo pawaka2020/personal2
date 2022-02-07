@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strlcat.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: riramli <riramli@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/01/01 00:00:00 by riramli           #+#    #+#             */
+/*   Updated: 2022/10/01 00:00:00 by riramli          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 //adds src to end of dst.
 //size is the size of the combined string. 
 //size must not exceed the allocated memory for dst
