@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_printf.h                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: riramli <riramli@student.42kl.edu.my>      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/01/01 00:00:00 by riramli           #+#    #+#             */
+/*   Updated: 2022/01/01 00:00:00 by riramli          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #ifndef FT_PRINTF_H
 # define FT_PRINTF_H
 //for using 'write' function
@@ -9,6 +21,7 @@
 # include <stdarg.h>
 //required .c files
 # include "../libft/libft.h"
+
 int		ft_printf(const char *str, ...);
 int		ft_putchar(char c);
 void	ft_printchar(int i, int *strlen);

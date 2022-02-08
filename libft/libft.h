@@ -1,6 +1,18 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   libft.h                                            :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: riramli <riramli@student.42kl.edu.my>      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/01/01 00:00:00 by riramli           #+#    #+#             */
+/*   Updated: 2022/01/01 00:00:00 by riramli          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #ifndef LIBFT_H
 # define LIBFT_H
-//The ft_*.c files use these libraries. Make sure to include "libft.h" in each 
+//The ft_*.c files use these libraries. Make sure to include "libft.h" in each
 # include <stdlib.h>
 # include <string.h>
 # include <strings.h>
@@ -9,7 +21,7 @@
 //Prototypes for Libft project
 int		ft_isalpha(int c);
 int		ft_isdigit(int c);
-int		ft_isalnum (int c);
+int		ft_isalnum(int c);
 int		ft_isascii(int c);
 int		ft_isprint(int c);
 size_t	ft_strlen(const char *s);

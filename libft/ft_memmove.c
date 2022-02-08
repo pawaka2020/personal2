@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memmove.c                                        :+:      :+:    :+:   */
+/*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: riramli <riramli@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -10,20 +10,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-/*
-copies len bytes from string src to string dst, non-destructive manner.
-len must not exceed size of dst
-
-RETURN VALUES
-     The memmove() function returns the original value of dst.
-*/
-/*
-[crash]: your memmove does not well with NULL as both parameters and size
-Test code:
-ft_memmove(((void *)0), ((void *)0), 5);
-*/
-//for nondestructive copying, copy in reverse direction
-//if dst > src 
 #include "libft.h"
 
 void	*ft_memmove(void *dst, const void *src, size_t len)

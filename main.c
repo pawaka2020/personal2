@@ -1,10 +1,26 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   main.c                                             :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: riramli <riramli@student.42kl.edu.my>      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/01/01 00:00:00 by riramli           #+#    #+#             */
+/*   Updated: 2022/01/01 00:00:00 by riramli          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+/*
+test with 'gcc main.c *.a'
+remember to create 'text' first.
+*/
 #include "mylibft.h"
 
 int	main(void)
 {
-	int fd; 
-	int read;
-	char 	*line;
+	int		fd;
+	int		read;
+	char	*line;
 	char	*str;
 
 	fd = open("text", O_RDONLY);
@@ -19,7 +35,7 @@ int	main(void)
 		else
 			str = ft_strjoin(str, line);
 	}
-	ft_printf("%s\n", str);
+	ft_printf("%s", str);
 	free(line);
 	free(str);
 }
